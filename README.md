@@ -1,9 +1,9 @@
 # CS:GO Empire Roulette Web Tests
 This project contains automated web tests for the Roulette page on CS:GO Empire, using Python and Playwright framework. It was designed to verify the Bet Input field and Bet Controls functionality as part of a **Skill Assessment for the CSGOEmpire team**.
 
-[!IMPORTANT]
-## Important notes for the Assessors (CSGOEmpire team):
-- **Test coverage**: the tests aren't exhaustive. They aim to showcase coding techniques for the Skill Assessment, completed under the tight schedule and without prior knowledge of the Playwright framework.
+> [!IMPORTANT]
+> ## Important notes for the Assessors (CSGOEmpire team):
+> - **Test coverage**: the tests aren't exhaustive. They aim to showcase coding techniques for the Skill Assessment, completed under the tight schedule and without prior knowledge of the Playwright framework.
 - **No Authentication**: following assessment guidelines, no user login is required for these tests.
 - **Pytest Integration**: test scripts in `tests` folder utilise Pytest library to perform an initial webpage check before each test. See tests scrips in `tests_alternative` folder for an atlernative version, where no Pytest library is used.
 - **Output Visibility**: tests are designed to print intermediate results to terminal for clarity during manual execution. These prints are optional and can be omitted once integrated with a test execution reporting system.
