@@ -1,0 +1,42 @@
+[
+  {
+    "input_value": "",
+    "expected_value": "",
+    "comment": "Empty input should remain empty (no change)"
+  },
+  {
+    "input_value": "0",
+    "expected_value": "0",
+    "comment": "Single zero input should remain as '0'"
+  },
+  {
+    "input_value": "0.0",
+    "expected_value": "0.0",
+    "comment": "Zero with a decimal should retain its format"
+  },
+  {
+    "input_value": "10.0",
+    "expected_value": "10.0",
+    "comment": "A valid decimal number should not change"
+  },
+  {
+    "input_value": "00.01",
+    "expected_value": "00.01",
+    "comment": "Min Value"
+  },
+  {
+    "input_value": "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.99",
+    "expected_value": "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.99",
+    "comment": "Max Value - 308 in accordance with IEEE 754"
+  },
+  {
+    "input_value": "10,00",
+    "expected_value": "10,00",
+    "comment": "Comma as a decimal separator should remain unchanged"
+  },
+  {
+    "input_value": "1000000000000005.99",
+    "expected_value": "1000000000000005.99",
+    "comment": "Very large numbers should be preserved with two decimal places"
+  }
+]

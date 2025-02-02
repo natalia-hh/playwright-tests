@@ -1,0 +1,51 @@
+{
+    "en": {
+        "roulette_page": {
+            "title": "CSGOEmpire | The most trusted Counter-Strike Skin Gambling Site"
+        },
+        "bet_input_field": {
+            "placeholder": "Enter bet amount..."
+        },
+        "place_bet_buttons": {
+            "ct": "Place Bet",
+            "bonus": "Place Bet",
+            "t": "Place Bet"
+        },
+        "adjust_bet_buttons": {
+            "clear": "Clear ",
+            "plus_0.01": "+ 0.01",
+            "plus_0.1": "+ 0.1",
+            "plus_1": "+ 1",
+            "plus_10": "+ 10",
+            "plus_100": "+ 100",
+            "half": "1/ 2",
+            "double": "x 2",
+            "max": "Max "
+        }
+    },
+    "es": {
+       "roulette_page": {
+            "title": "CSGOEmpire | The most trusted Counter-Strike Skin Gambling Site"
+        },
+        "bet_input_field": {
+            "placeholder": "Introduce el importe de la apuesta..."
+        },
+        "place_bet_buttons": {
+            "ct": "Realizar apuesta",
+            "bonus": "Realizar apuesta",
+            "t": "Realizar apuesta"
+        },
+        "adjust_bet_buttons": {
+            "clear": "Limpiar ",
+            "plus_0.01": "+ 0.01",
+            "plus_0.1": "+ 0.1",
+            "plus_1": "+ 1",
+            "plus_10": "+ 10",
+            "plus_100": "+ 100",
+            "half": "1/ 2",
+            "double": "x 2",
+            "max": "Máx "
+        } 
+        
+    }
+}
