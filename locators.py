@@ -4,6 +4,7 @@ class RouletteLocators:
       
     BET_SECTION = 'div[data-testid="roulette-bet-input"]'
     BET_INPUT_FIELD = '[data-testid="roulette-bet-input"] >> input'
+    BET_INPUT_FIELD_ICON = '[data-testid="roulette-bet-input"] >> svg'
     
     ADJUST_BET_LOCATORS = {
         "clear": f'{BET_SECTION} [data-testid="roulette-bet-input-clearundefined"]',
