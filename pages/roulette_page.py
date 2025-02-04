@@ -11,7 +11,7 @@ class RoulettePage(BasePage):
     def goto_page(self):
         self.page.goto(Config.ROULETTE_LANDING_PAGE)
         self.page.wait_for_load_state("domcontentloaded")
-        self.wait_for_element(RouletteLocators.BET_INPUT_FIELD)
+        self.wait_for_element(RouletteLocators.BET_INPUT_FIELD, element_name='Bet Input field')
         
     def accept_cookies(self):
         try:
@@ -40,13 +40,13 @@ class RoulettePage(BasePage):
         if adjust_bet_button_label not in RouletteLocators.ADJUST_BET_LOCATORS:
             logger.error(f"Unknown Adjust Bet button: {adjust_bet_button_label}")
             raise ValueError(f"Unknown Adjust Bet button: {adjust_bet_button_label}")
-        self.click(RouletteLocators.ADJUST_BET_LOCATORS[adjust_bet_button_label], element_name='Adjust Bet Button {adjust_bet_button_label}')
+        self.click(RouletteLocators.ADJUST_BET_LOCATORS[adjust_bet_button_label], element_name=f'Adjust Bet Button {adjust_bet_button_label}')
     
     def click_place_bet_button(self, place_bet_button: str):
         if place_bet_button not in RouletteLocators.PLACE_BET_LOCATORS:
             logger.error(f"Unknown Place Bet button: {place_bet_button}")
             raise ValueError(f"Unknown Place Bet button: {place_bet_button}")
-        self.click(RouletteLocators.PLACE_BET_LOCATORS[place_bet_button], element_name='Adjust Bet Button {place_bet_button}')    
+        self.click(RouletteLocators.PLACE_BET_LOCATORS[place_bet_button], element_name=f'Place Bet Button {place_bet_button}')    
     
     def calculate_bet(self, initial_value, button: str) -> str:
         if button == 'clear':
