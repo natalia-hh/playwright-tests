@@ -33,7 +33,7 @@ This project contains automated web tests for the **Roulette page** on CS:GO Emp
 
 ## Installation
 ```sh
-git clone https://github.com/your_repo/playwright-tests.git
+git clone https://github.com/your_repo/playwright-tests.git -b code-level-up
 cd playwright-tests
 pip install -r requirements.txt
 playwright install
