@@ -4,6 +4,7 @@ from pages.roulette_page import RoulettePage
 from locators import RouletteLocators
 from config import logger
 
+
 @pytest.mark.regression
 @pytest.mark.parametrize(
     ('adjust_bet_button_label', 'initial_value'), 

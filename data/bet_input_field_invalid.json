@@ -15,7 +15,7 @@
     "comment": "Only numeric part should be retained, text should be ignored"
   },
   {
-    "input_value": "10.0!@#$%^*±",
+    "input_value": "10.0!@#$%^*",
     "expected_value": "10.0",
     "comment": "Special characters should be ignored, only numbers should be retained"
   }

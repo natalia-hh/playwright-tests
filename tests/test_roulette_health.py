@@ -5,6 +5,7 @@ from locators import RouletteLocators
 from config import Config
 from config import logger
 
+
 @pytest.mark.smoke
 def test_webpage_healthcheck(roulette_page: RoulettePage):
     """
