@@ -9,8 +9,9 @@ from config import logger
 @pytest.mark.regression
 @pytest.mark.parametrize('language', Config.SUPPORTED_LANGUAGES)
 def test_webpage_labels(roulette_page: RoulettePage, language):
-    """Verify CSGO/Roulette UI and Bet elements translations"""
-
+    """
+    Verifies that the page title and bet input placeholder are correctly translated.
+    """
     roulette_page.page.evaluate(f"""(lang) => {{
         localStorage.setItem('userChosenLocale', lang);  
         localStorage.setItem('userHasChosenLocal', 'true'); 
@@ -24,6 +25,21 @@ def test_webpage_labels(roulette_page: RoulettePage, language):
     logger.info(f'[{language}] Bet Input field placeholder: {Translations.get_label('bet_input_field','placeholder')}')
     expect(roulette_page.page.locator(RouletteLocators.BET_INPUT_FIELD)).to_have_attribute('placeholder', Translations.get_label('bet_input_field','placeholder'))
 
+@pytest.mark.regression
+@pytest.mark.parametrize('language', Config.SUPPORTED_LANGUAGES)
+def test_adjust_bet_buttons_labels(roulette_page: RoulettePage, language):
+    """
+    Validates the translation of 'Adjust Bet' button labels for supported languages.
+    Ensures each button is visible and displays the correct localized text.
+    """
+    roulette_page.page.evaluate(f"""(lang) => {{
+        localStorage.setItem('userChosenLocale', lang);  
+        localStorage.setItem('userHasChosenLocal', 'true'); 
+    }}""", language)
+    roulette_page.page.reload()
+    
+    Translations.LANGUAGE = language
+
     translations = Translations.get_group("adjust_bet_buttons")
     for key, locator in RouletteLocators.ADJUST_BET_LOCATORS.items():
         expected_label = translations.get(key, 'no label found')
@@ -31,10 +47,24 @@ def test_webpage_labels(roulette_page: RoulettePage, language):
         expect(roulette_page.page.locator(locator)).to_be_visible()   
         expect(roulette_page.page.locator(locator)).to_have_text(expected_label)
     
+@pytest.mark.regression
+@pytest.mark.parametrize('language', Config.SUPPORTED_LANGUAGES)
+def test_place_bet_buttons_labels(roulette_page: RoulettePage, language):
+    """
+    Validates the translation of 'Place Bet' button labels for supported languages.
+    Ensures each button is visible and displays the correct localized text.
+    """
+    roulette_page.page.evaluate(f"""(lang) => {{
+        localStorage.setItem('userChosenLocale', lang);  
+        localStorage.setItem('userHasChosenLocal', 'true'); 
+    }}""", language)
+    roulette_page.page.reload()
+    
+    Translations.LANGUAGE = language    
+    
     translations = Translations.get_group("place_bet_buttons")      
     for key, locator in RouletteLocators.PLACE_BET_LOCATORS.items():
         expected_label = translations.get(key, 'no label found')
         logger.info(f'[{language}] Checking Place Bet Button: {key} to have label: {expected_label}')
         expect(roulette_page.page.locator(locator)).to_be_visible()   
         expect(roulette_page.page.locator(locator)).to_contain_text(expected_label) # contain_text, because there are Win 2x, W14x texts, need to cover later
-    

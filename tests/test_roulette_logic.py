@@ -9,9 +9,13 @@ from config import logger
     ('adjust_bet_button_label', 'initial_value'), 
     [(button, value) for button in RouletteLocators.ADJUST_BET_LOCATORS.keys() for value in [0.01, 0, 10, 100.05, 9999]])
 def test_adjust_bet_buttons(roulette_page: RoulettePage, adjust_bet_button_label, initial_value):
-    """Adjust Bet Buttons Verification"""
+    """
+    Verifies the functionality of 'Adjust Bet' buttons with various initial bet values.
+
+    Ensures each button correctly adjusts the bet value based on predefined logic 
+    for different scenarios, including edge cases like zero and large numbers.
+    """    
          # ..scenario 1 - positive check all buttons:
-    # initial_value = 10
     roulette_page.clear_bet_value() 
     roulette_page.enter_bet_keyboard(initial_value)
     roulette_page.click_adjust_bet_button(adjust_bet_button_label)
