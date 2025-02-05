@@ -17,7 +17,7 @@ This project contains automated web tests for the **Roulette page** on CS:GO Emp
 > - **Localization**: Language switching is implemented via **Local Storage Manipulation** for speed and simplicity. For comprehensive localization testing, additional UI-level verification should be implemented.
 
 ## 🗂️ Project Structure
-
+```plaintext
 ├── tests/                           # Test scripts
 │   ├── test_roulette_health.py       # Health check for Roulette page
 │   ├── test_roulette_logic.py        # Tests for betting logic and calculations
@@ -43,7 +43,7 @@ This project contains automated web tests for the **Roulette page** on CS:GO Emp
 ├── requirements.txt                 # Project dependencies
 ├── .gitignore                       # Specifies files/folders to ignore in Git
 └── README.md                        # Project documentation
-
+```
 
 ## Installation
 ```sh
