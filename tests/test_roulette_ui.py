@@ -59,7 +59,7 @@ def test_bet_input_icon_visibility(roulette_page: RoulettePage):
     expect(path_element).to_be_visible()
 
     logger.info("Capturing a screenshot of the bet input icon and comparing it with the baseline.")
-    current_screenshot = "snapshots/bet_input_icon.png"
+    current_screenshot = "test-results/snapshots/bet_input_icon.png"
     baseline_screenshot = "data/images/bet_input_icon.png"
 
     icon_locator.screenshot(path=current_screenshot)
