@@ -3,5 +3,8 @@
 .venv/
 __pycache__/
 .pytest_cache/
+allure-results/
 test-results/
+screenshots/
 assets/
+snapshots/
