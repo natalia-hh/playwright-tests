@@ -8,7 +8,7 @@ This project contains automated web tests for the **Roulette page** on CS:GO Emp
 - **Multi-Language Support:** Validates UI translations (English and Spanish by parameterized tests).
 - **Cross-Browser Compatibility:** Tests can be executed on Chromium, Firefox, and WebKit using CLI options.
 
-## ❗️ Important Notes for Assessors (CSGOEmpire Team)
+## ❗️ Important Notes for Assessors
 > - **Test Сoverage**: This suite is not exhaustive. It showcases coding practices and testing approaches for the Skill Assessment, focusing specifically on the selected section of the Roulette page: bet input field, bet adjustment buttons, and the bet placement button.
 > - **Authentication**: User login is not required, in accordance with the assessment guidelines.
 > - **Security Consideration**: Tests may fail in **headless mode** due to Cloudflare’s human verification checks. No bypass mechanisms have been implemented in this project.
