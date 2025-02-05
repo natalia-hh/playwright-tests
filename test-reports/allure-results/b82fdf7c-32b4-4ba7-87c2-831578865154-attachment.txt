@@ -1,0 +1,6 @@
+[32mINFO    [0m config:base_page.py:35 'Bet Input field' is now visible
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: ''
+[32mINFO    [0m config:test_roulette_ui.py:34 Checking Bet Input Case: Number should be rounded to two decimal places; Test value: 10.006
+[32mINFO    [0m config:test_roulette_ui.py:38 Checking if the border is highlighted in red

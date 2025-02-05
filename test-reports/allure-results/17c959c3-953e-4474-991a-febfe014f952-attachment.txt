@@ -1,0 +1,7 @@
+[32mINFO    [0m config:base_page.py:35 'Bet Input field' is now visible
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: ''
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: '0'
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Adjust Bet Button double'
+[32mINFO    [0m config:test_roulette_logic.py:24 Checking that initial value 0 adjusted by double; Expected value: 0

@@ -1,0 +1,5 @@
+[32mINFO    [0m config:base_page.py:35 'Bet Input field' is now visible
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:test_roulette_translations.py:17 [en] Language set successfully
+[32mINFO    [0m config:test_roulette_translations.py:65 [en] Checking Place Bet Button: ct to have label: Place Bet

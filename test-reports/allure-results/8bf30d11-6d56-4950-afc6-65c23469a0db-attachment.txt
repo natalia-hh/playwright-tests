@@ -1,0 +1,10 @@
+[33mWARNING [0m config:base_page.py:37 Timeout waiting for 'Bet Input field' to be visible: Locator.wait_for: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"roulette-bet-input\"]").locator("input") to be visible
+
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: ''
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: '0.01'
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Adjust Bet Button plus_100'
+[32mINFO    [0m config:test_roulette_logic.py:24 Checking that initial value 0.01 adjusted by plus_100; Expected value: 100.01

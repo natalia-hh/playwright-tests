@@ -1,0 +1,18 @@
+[32mINFO    [0m config:base_page.py:35 'Bet Input field' is now visible
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:test_roulette_health.py:18 Checking Page Title - CSGOEmpire text
+[32mINFO    [0m config:test_roulette_health.py:21 Checking Bet Input field
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: clear
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: plus_0.01
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: plus_0.1
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: plus_1
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: plus_10
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: plus_100
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: half
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: double
+[32mINFO    [0m config:test_roulette_health.py:24 Checking Adjust Bet Button: max
+[32mINFO    [0m config:test_roulette_health.py:27 Checking Place Bet Button: ct
+[32mINFO    [0m config:test_roulette_health.py:27 Checking Place Bet Button: bonus
+[32mINFO    [0m config:test_roulette_health.py:27 Checking Place Bet Button: t
+[32mINFO    [0m config:test_roulette_health.py:30 Checking Total Number of Adjust Bet buttons: 9

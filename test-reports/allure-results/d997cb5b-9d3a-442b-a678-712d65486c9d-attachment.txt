@@ -1,0 +1,7 @@
+[32mINFO    [0m config:base_page.py:35 'Bet Input field' is now visible
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:test_roulette_ui.py:49 Checking if the bet input icon is visible.
+[32mINFO    [0m config:test_roulette_ui.py:53 Checking icon dimensions: 14x14
+[32mINFO    [0m config:test_roulette_ui.py:57 Checking if the SVG icon contains a <path> element.
+[32mINFO    [0m config:test_roulette_ui.py:61 Capturing a screenshot of the bet input icon and comparing it with the baseline.

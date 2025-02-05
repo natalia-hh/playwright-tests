@@ -1,0 +1,6 @@
+[32mINFO    [0m config:base_page.py:35 'Bet Input field' is now visible
+[32mINFO    [0m config:base_page.py:12 Clicked on 'Accept Cookie button'
+[32mINFO    [0m config:base_page.py:35 'Accept Cookie banner' is now hidden
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: ''
+[32mINFO    [0m config:base_page.py:19 Filled 'Bet Input field' with value: '0.0'
+[32mINFO    [0m config:test_roulette_ui.py:21 Checking Bet Input Case: Zero with a decimal should retain its format; Test value 0.0; Expected value: 0.0
