@@ -1,6 +1,7 @@
 import pytest
 from pages.roulette_page import RoulettePage
 
+
 VALID_BROWSERS = ("chromium", "firefox", "webkit")
 
 def pytest_addoption(parser):

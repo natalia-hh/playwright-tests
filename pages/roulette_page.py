@@ -4,6 +4,7 @@ from utils import format_number
 from config import Config, logger
 from pages.base_page import BasePage
 
+
 class RoulettePage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
