@@ -65,8 +65,8 @@ Note: The `--custom-browser` option is a custom CLI argument added to avoid conf
 ## Reporting
 To generate **Allure Report**:
 ```sh
-pytest --alluredir=allure-results
-allure serve allure-results
+pytest --alluredir=test-results/allure-results
+allure serve test-results/allure-results
 ```
 
 ## CI/CD Integration
