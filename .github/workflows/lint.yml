@@ -1,0 +1,32 @@
+name: Python Lint & Format
+
+on:
+    push:
+      branches: [add-codecov]
+    pull_request:
+      branches: [add-codecov]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install flake8 pylint black
+
+      - name: Run flake8 (style check)
+        run: flake8 .
+
+      - name: Run pylint (deep analysis)
+        run: pylint $(git ls-files '*.py')
+
+      - name: Run black (autoformat check)
+        run: black --check .
