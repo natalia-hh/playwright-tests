@@ -1,17 +1,19 @@
 import logging
 import re
 
+
 class Config:
-    BASE_URL = 'https://csgoempire.com'
-    ROULETTE_LANDING_PAGE = f'{BASE_URL}/roulette'
-    PAGE_TITLE_REGEX = re.compile('.*CSGOEmpire.*')
+    BASE_URL = "https://csgoempire.com"
+    ROULETTE_LANDING_PAGE = f"{BASE_URL}/roulette"
+    PAGE_TITLE_REGEX = re.compile(".*CSGOEmpire.*")
     SUPPORTED_LANGUAGES = ["en", "es"]
-    ERROR_BORDER_STYLE = re.compile('.*border-red-2.*')
+    ERROR_BORDER_STYLE = re.compile(".*border-red-2.*")
+
 
 class LoggerConfig:
     LOG_LEVEL = logging.INFO
-    LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
-    LOG_FILE = 'test-results/logs/test_log.log'
+    LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s"
+    LOG_FILE = "test-results/logs/test_log.log"
 
     @staticmethod
     def setup_logging():
@@ -30,5 +32,6 @@ class LoggerConfig:
         logger.addHandler(console_handler)
 
         return logger
+
 
 logger = LoggerConfig.setup_logging()

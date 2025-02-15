@@ -5,26 +5,26 @@ from pathlib import Path
 def format_number(value: float) -> str:
     """Formats a numeric value to a string with two decimal places."""
     value = float(value)
-    return f"{value:.2f}".rstrip('0').rstrip('.')
+    return f"{value:.2f}".rstrip("0").rstrip(".")
 
 
 def load_json_test_data(filename: str):
-    file_path = Path(__file__).parent / 'data' / filename
+    file_path = Path(__file__).parent / "data" / filename
     with file_path.open(encoding="utf-8") as f:
         data = json.load(f)
         return data
-    
-    
+
+
 def load_json_test_data_comment(filename: str):
-    file_path = Path(__file__).parent / 'data' / filename
+    file_path = Path(__file__).parent / "data" / filename
     with file_path.open(encoding="utf-8") as f:
         data = json.load(f)
     return [
         (item["input_value"], item["expected_value"], item.get("comment", ""))
         for item in data
     ]
-    
-    
+
+
 class Translations:
     LANGUAGE = "en"  # Default language
     _translations = None  # Translations cache
