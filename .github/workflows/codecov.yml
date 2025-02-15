@@ -1,6 +1,10 @@
 name: CI for Codecov
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [add-codecov]
+  pull_request:
+    branches: [add-codecov]
 
 jobs:
   test:
