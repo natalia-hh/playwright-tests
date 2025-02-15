@@ -29,7 +29,13 @@ class BasePage:
             logger.error(f"Failed to get input value from '{element_name}': {e}")
             return ""
 
-    def wait_for_element(self, locator: str, state: str = "visible", timeout: int = 3000, element_name: str = "Element"):
+    def wait_for_element(
+        self,
+        locator: str,
+        state: str = "visible",
+        timeout: int = 3000,
+        element_name: str = "Element",
+    ):
         try:
             self.page.locator(locator).wait_for(state=state, timeout=timeout)
             logger.info(f"'{element_name}' is now {state}")
