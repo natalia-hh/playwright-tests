@@ -1,4 +1,4 @@
-name: Python Lint
+name: Python flake8
 
 on:
     push:
@@ -20,7 +20,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install pylint 
+        run: pip install flake8 
 
-      - name: Run pylint (deep analysis)
-        run: pylint $(git ls-files '*.py')
+      - name: Run flake8 (style check)
+        run: flake8 .

@@ -1,4 +1,4 @@
-name: Python Lint
+name: Python black
 
 on:
     push:
@@ -20,7 +20,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install pylint 
+        run: pip install black
 
-      - name: Run pylint (deep analysis)
-        run: pylint $(git ls-files '*.py')
+      - name: Run black (autoformat check)
+        run: black --check .
