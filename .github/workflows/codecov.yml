@@ -16,14 +16,10 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-
+      
       - name: Install Playwright
         run: |
           pip install playwright
-          playwright install 
-
-      - name: Install Playwright dependencies
-        run: |
           npx playwright install --with-deps
         
       - name: Run tests with coverage
