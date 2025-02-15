@@ -32,10 +32,8 @@ jobs:
 
       - name: Verify Playwright Browser
         run: |
-          python -c "from playwright.sync_api import sync_playwright; 
-          with sync_playwright() as p: 
-              browser = p.chromium.launch(headless=True)
-              print(browser.version())"
+          python -c 'from playwright.sync_api import sync_playwright; with sync_playwright() as p: browser = p.chromium.launch(headless=True); print("Chromium version:", browser.version)'
+
 
       # - name: Verify Playwright Browser
       #   run: python -c "from playwright.sync_api import sync_playwright; with sync_playwright() as p: print(p.chromium.launch(headless=True).version())"
