@@ -31,7 +31,7 @@ jobs:
         run: python -c "from playwright.sync_api import sync_playwright; print('Playwright Executed')"
 
       - name: Check installed Playwright browsers
-        run: playwright show-browsers
+        run: npx playwright browsers path
 
       - name: Verify Playwright Browser
         run: python -c "from playwright.sync_api import sync_playwright; print(sync_playwright().start().chromium.launch(headless=True).version())"
