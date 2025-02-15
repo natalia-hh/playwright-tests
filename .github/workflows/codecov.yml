@@ -31,7 +31,8 @@ jobs:
         run: python -c "from playwright.sync_api import sync_playwright; print('Playwright Executed')"
 
       - name: Verify Playwright Browser
-        run: python -c "from playwright.sync_api import sync_playwright; print(sync_playwright().start().chromium.launch(headless=True).version())"
+        run: python -c "from playwright.sync_api import sync_playwright; with sync_playwright() as p: print(p.chromium.launch(headless=True).version())"
+        # run: python -c "from playwright.sync_api import sync_playwright; print(sync_playwright().start().chromium.launch(headless=True).version())"
 
       - name: Run tests with coverage
         run: pytest -s --cov=tests --cov-report=xml --headless
