@@ -26,11 +26,14 @@ jobs:
         run: |
           python -c "from playwright.sync_api import sync_playwright; sync_playwright().start().stop()"
 
-      - name: Test Playwright browser startup
+      - name: Test Playwright Startup
         run: python -c "from playwright.sync_api import sync_playwright; print('Playwright Executed')"
-        
+
+      - name: Verify Playwright Browser
+        run: python -c "from playwright.sync_api import sync_playwright; print(sync_playwright().start().chromium.launch(headless=True).version())"
+
       - name: Run tests with coverage
-        run: pytest -s --cov=tests --cov-report=xml 
+        run: pytest -s --cov=tests --cov-report=xml --headless
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
