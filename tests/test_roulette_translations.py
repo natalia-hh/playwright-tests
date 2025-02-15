@@ -1,9 +1,10 @@
 import pytest
 from playwright.sync_api import expect
-from pages.roulette_page import RoulettePage
-from locators import RouletteLocators
-from utils import Translations
+
 from config import Config, logger
+from locators import RouletteLocators
+from pages.roulette_page import RoulettePage
+from utils import Translations
 
 
 def set_language(roulette_page, language):

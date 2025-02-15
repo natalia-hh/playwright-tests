@@ -1,9 +1,9 @@
 import pytest
 from playwright.sync_api import expect
-from pages.roulette_page import RoulettePage
+
+from config import Config, logger
 from locators import RouletteLocators
-from config import Config
-from config import logger
+from pages.roulette_page import RoulettePage
 
 
 @pytest.mark.smoke
