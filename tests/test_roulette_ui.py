@@ -65,7 +65,7 @@ def test_bet_input_field_invalid(
     border_locator = roulette_page.page.locator(
         RouletteLocators.BET_INPUT_FIELD
     ).locator("..")
-    logger.info(f"Checking if the border is highlighted in red")
+    logger.info(f"Checking if the border is red for {input_value}")
     expect(border_locator).to_have_class(Config.ERROR_BORDER_STYLE)
 
 

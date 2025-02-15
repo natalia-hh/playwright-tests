@@ -9,9 +9,9 @@ from config import Config, logger
 def set_language(roulette_page, language):
     """Helper function to set language and reload the page."""
     roulette_page.page.evaluate(
-        f"""(lang) => {{
-        localStorage.setItem('userChosenLocale', lang);  
-        localStorage.setItem('userHasChosenLocal', 'true'); 
+        """(lang) => {{
+        localStorage.setItem('userChosenLocale', lang);
+        localStorage.setItem('userHasChosenLocal', 'true');
     }}""",
         language,
     )
