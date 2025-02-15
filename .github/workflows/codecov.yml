@@ -21,6 +21,13 @@ jobs:
         run: |
           pip install playwright
           npx playwright install --with-deps
+
+      - name: Verify Playwright Installation
+        run: |
+          python -c "from playwright.sync_api import sync_playwright; sync_playwright().start().stop()"
+
+      - name: Test Playwright browser startup
+        run: python -c "from playwright.sync_api import sync_playwright; print('Playwright Executed')"
         
       - name: Run tests with coverage
         run: pytest -s --cov=tests --cov-report=xml 
