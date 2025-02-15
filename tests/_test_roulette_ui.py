@@ -1,11 +1,13 @@
-import pytest
-from playwright.sync_api import expect
-from pages.roulette_page import RoulettePage
-from locators import RouletteLocators
-from utils import load_json_test_data_comment
-from config import Config, logger
 import os
+
+import pytest
 from PIL import Image, ImageChops
+from playwright.sync_api import expect
+
+from config import Config, logger
+from locators import RouletteLocators
+from pages.roulette_page import RoulettePage
+from utils import load_json_test_data_comment
 
 
 bet_input_field_values_test_data = load_json_test_data_comment(

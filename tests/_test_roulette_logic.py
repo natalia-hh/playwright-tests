@@ -1,8 +1,9 @@
 import pytest
 from playwright.sync_api import expect
-from pages.roulette_page import RoulettePage
-from locators import RouletteLocators
+
 from config import logger
+from locators import RouletteLocators
+from pages.roulette_page import RoulettePage
 
 
 @pytest.mark.regression
